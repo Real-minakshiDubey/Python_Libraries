@@ -101,6 +101,7 @@ It includes basic plotting, customization, legends, labels, styles, bar charts, 
 ## ▶ How to Run
 ```bash
 python Matplotlib.py
+```
 
 
 ## ===== Choosing the Right Plot =====
