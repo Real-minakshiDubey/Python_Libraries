@@ -61,7 +61,7 @@ It covers dataset loading, data cleaning, filtering, grouping, sorting, and basi
 
 | File Name           | Description                                   |
 |---------------------|-----------------------------------------------|
-| `pandas_practice.py`| Python file with Pandas examples and exercises|
+| `Pandas.py`| Python file with Pandas examples and exercises|
 
 ## ▶️ How to Run
 
@@ -69,7 +69,39 @@ It covers dataset loading, data cleaning, filtering, grouping, sorting, and basi
 python Pandas.py
 ```
 
-# Matplotlib Practice 🧮
+# Matplotlib Practice 📊
+
+This folder contains my Matplotlib practice exercises after completing the Matplotlib crash course.  
+It includes basic plotting, customization, legends, labels, styles, bar charts, pie charts, histograms, and more.
+
+---
+
+## 🧠 Topics Covered
+- Basic line plots
+- Adding labels & titles
+- Legends (`ax.legend()`)
+- Line styles, colors & markers
+- Bar charts (vertical & horizontal)
+- Pie charts
+- Histograms
+- Plotting multiple datasets
+- Customizing figure size & layout
+- Using `plt.style` and `plt.xkcd` mode
+
+---
+
+## 📂 Files
+
+| File Name        | Description                               |
+|------------------|-------------------------------------------|
+| `Matplotlib.py`  | Python file with all Matplotlib examples  |
+
+---
+
+## ▶ How to Run
+```bash
+python Matplotlib.py
+
 
 ## ===== Choosing the Right Plot =====
 - plt.plot()        → Use for continuous numeric data over a sequence (like trends over time)
