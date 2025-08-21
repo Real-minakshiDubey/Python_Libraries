@@ -113,6 +113,108 @@ python Matplotlib.py
 - plt.fill_between()→ Use for area charts (good for showing magnitude over a range)
 - plt.pie()         → Use for showing parts of a whole (not great for many categories)
 
+# Seaborn Visual Cheat Sheet 🌈
+
+A **cute & quick guide** for Seaborn — perfect for Python data visualization! 🐾  
+Includes **code + mini example plots** for fast learning & revision.
+
+---
+
+## 1️⃣ Basics
+- **Seaborn** = Statistical visualization library built on Matplotlib  
+- **Install:** `pip install seaborn`  
+- **Import:**
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+```
+
+## 2️⃣ Common Plots
+-**Barplot**
+Numeric vs categorical
+```
+sns.barplot(x='Gender', y='Hours', data=df)
+plt.show()
+Male   ▇▇▇▇
+Female ▇▇▇
+```
+-**Countplot**
+Category frequency
+```
+sns.countplot(x='Gender', data=df)
+plt.show()
+Male   ▇▇▇▇▇
+Female ▇▇▇
+```
+-**Scatterplot**
+Numeric vs numeric with optional hue/style
+```
+sns.scatterplot(x='Age', y='Hours', hue='Gender', style='Gender', data=df)
+plt.show()
+```
+Example: Points colored by Gender
+
+-**Boxplot**
+Distribution & outliers
+```
+sns.boxplot(x='Gender', y='Hours', data=df)
+plt.show()
+```
+Example: Shows median, quartiles & outliers
+
+-**Boxplot**
+Distribution & outliers
+```
+sns.boxplot(x='Gender', y='Hours', data=df)
+plt.show()
+```
+Example: Shows median, quartiles & outliers
+
+-**Heatmap**
+Color-coded numbers / correlation
+```
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+plt.show()
+```
+Example: Darker = higher correlation, lighter = lower correlation
+
+-**Lineplot / Pointplot**
+Trend over x, summary per category
+```
+sns.pointplot(x='Day', y='Sales', data=df)
+plt.show()
+```
+example: Shows average sales per day
+
+##3️⃣ Estimator 🧠
+
+Summarize multiple numeric values per category into one value
+Default: np.mean
+Other options: np.median, np.sum, custom function
+```
+sns.barplot(x='Gender', y='Hours', data=df, estimator=np.median)
+```
+##4️⃣ Color & Style
+
+**palette** → color scheme: 'pastel', 'coolwarm', 'Blues'
+
+**hue** → color by another categorical column
+
+**style** → marker shape / line style
+```
+sns.scatterplot(x='Age', y='Hours', hue='Gender', style='Gender', data=df)
+```
+
+##5️⃣ Quick Tricks ✨
+
+-Always add plt.show() to display plots
+-order → control category order in barplots
+-linewidths → separate cells in heatmap
+-Combine hue + style → multi-category visualization
+-Can use figsize from Matplotlib: plt.figure(figsize=(8,5))
+
+
 📜 License
 This project is open source and available under the MIT License.
 
